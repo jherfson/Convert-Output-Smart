@@ -1,2 +1,2 @@
-# smart_output-
+# SmartOutput
 Tratamento e conversão do SMaRT Impedance Measurement Software 
