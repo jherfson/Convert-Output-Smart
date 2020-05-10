@@ -45,8 +45,8 @@ vector.append(len(all_data) - 1)
 for i in range(len(vector) - 2):
     matriz = all_data[vector[i]: vector[i+1], 1:4]
     if magnitude_and_phase_are_given:
-        z_re = matriz[:, 1]*np.cos(matriz[:, 2])
-        z_im = matriz[:, 1]*np.sin(matriz[:, 2])
+        z_re = matriz[:, 1]*np.cos(np.radians(matriz[:, 2]))
+        z_im = matriz[:, 1]*np.sin(np.radians(matriz[:, 2]))
         matriz[:, 1] = z_re
         matriz[:, -1] = z_im
         #print(all_data[vector[i]][0])
